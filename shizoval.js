@@ -1,6 +1,6 @@
 
 
-
+tc('[Kosto]','Shizoval Is Ready,Please enter the battlefield before opening the menu!')
 	//Shizoval
 	
 		let functions,
