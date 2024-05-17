@@ -1,6 +1,5 @@
 
-
-tc('[Kosto]','Shizoval Is Ready,Please enter the battlefield before opening the menu!')
+tc('[Kosto]','Shizoval is ready, please press the "\" key to display the menu')
 	// ==UserScript==
 // @name             shizoval
 // @author           Alastor, tdsrse
@@ -365,7 +364,7 @@ menu.innerHTML = `
   <p class="version">Version: <span>2.1.1</span></p>
 `;
 menu.className = 'shizoval_content';
-menu.style.display = 'block';
+menu.style.display = 'none';
 document.body.appendChild(menu);
 
 class KeyPressing {
@@ -1376,7 +1375,7 @@ document.addEventListener('keydown', event => {
 	if (utils.isChatOpen) return;
 
 	if (event.keyCode == 16 && event.location == 2) flyHack();
-	else if (event.keyCode == 45 || event.keyCode == 96 || event.keyCode == 191) menu.style.display == 'block' ? menu.style.display = 'none' : menu.style.display = 'block';
+	else if (event.keyCode == 220) menu.style.display == 'block' ? menu.style.display = 'none' : menu.style.display = 'block';
 });
 
 function isPhone() {
