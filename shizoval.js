@@ -1373,8 +1373,6 @@ setInterval(function() {
 
 document.addEventListener('keydown', event => {
 	if (utils.isChatOpen) return;
-
-	if (event.keyCode == 16 && event.location == 2) flyHack();
 	else if (event.keyCode == 220) menu.style.display == 'block' ? menu.style.display = 'none' : menu.style.display = 'block';
 });
 
