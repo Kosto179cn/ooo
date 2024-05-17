@@ -85,7 +85,7 @@
         });
     //B队
     function B() {
-        (is_BB = !is_BB) ? (BB_interval = setInterval(BB, 1e-3), elm_BB.style.backgroundColor = "rgb(66 150 66/30%)", elm_BB.textContent = "[B] Right B Team[Running]", console.log("[Kosto]Start Click Team B"), tc("Kosto", "Start Click Team B", 3000)) : (clearInterval(BB_interval), elm_BB.style.backgroundColor = "transparent", elm_BB.textContent = "[B] Right B Team[No]", console.log("[Kosto]Clearinterval Team B Clicker"), tc("Kosto", "Clearinterval Team B Clicker", 3000))
+        (is_BB = !is_BB) ? (BB_interval = setInterval(BB, 10), elm_BB.style.backgroundColor = "rgb(66 150 66/30%)", elm_BB.textContent = "[B] Right B Team[Running]", console.log("[Kosto]Start Click Team B"), tc("Kosto", "Start Click Team B", 3000)) : (clearInterval(BB_interval), elm_BB.style.backgroundColor = "transparent", elm_BB.textContent = "[B] Right B Team[No]", console.log("[Kosto]Clearinterval Team B Clicker"), tc("Kosto", "Clearinterval Team B Clicker", 3000))
     }
     //B队快捷键
     document.addEventListener("keydown", e => {
@@ -122,7 +122,7 @@
     elm_AAA.classList.add("toogle", "HideGolds", "general");
     elm_AAA.textContent = "[A] Left A Team[No]",
         elm_AAA.addEventListener("click", () => {
-            (is_AAA = !is_AAA) ? (AAA_interval = setInterval(AAA, 1e-3), elm_AAA.style.backgroundColor = "rgb(66 150 66/30%)", elm_AAA.textContent = "[A] Left A Team[Running]", console.log(`[Kosto]Start Click Team A`), tc("Kosto", 'Start Click Team A', 3000)) : (clearInterval(AAA_interval), elm_AAA.style.backgroundColor = "transparent", elm_AAA.textContent = "[A] Left A Team[No]", console.log(`[Kosto]Clearinterval Team A Clicker`), tc("Kosto", 'Clearinterval Team A Clicker', 3000))
+            (is_AAA = !is_AAA) ? (AAA_interval = setInterval(AAA, 10), elm_AAA.style.backgroundColor = "rgb(66 150 66/30%)", elm_AAA.textContent = "[A] Left A Team[Running]", console.log(`[Kosto]Start Click Team A`), tc("Kosto", 'Start Click Team A', 3000)) : (clearInterval(AAA_interval), elm_AAA.style.backgroundColor = "transparent", elm_AAA.textContent = "[A] Left A Team[No]", console.log(`[Kosto]Clearinterval Team A Clicker`), tc("Kosto", 'Clearinterval Team A Clicker', 3000))
         });
     //快捷键a
     document.addEventListener("keydown", e => {
@@ -130,7 +130,7 @@
         if (e.keyCode === 65) {
             if (inbattie && elm_AAA.style.display !== "none") {
 
-                (is_AAA = !is_AAA) ? (AAA_interval = setInterval(AAA, 1e-3), elm_AAA.style.backgroundColor = "rgb(66 150 66/30%)", elm_AAA.textContent = "[A] Left A Team[Running]", console.log(`[Kosto]Start Click Team A`), tc("Kosto", 'Start Click Team A', 3000)) : (clearInterval(AAA_interval), elm_AAA.style.backgroundColor = "transparent", elm_AAA.textContent = "[A] Left A Team[No]", console.log(`[Kosto]Clearinterval Team A Clicker`), tc("Kosto", 'Clearinterval Team A Clicker', 3000))
+                (is_AAA = !is_AAA) ? (AAA_interval = setInterval(AAA, 10), elm_AAA.style.backgroundColor = "rgb(66 150 66/30%)", elm_AAA.textContent = "[A] Left A Team[Running]", console.log(`[Kosto]Start Click Team A`), tc("Kosto", 'Start Click Team A', 3000)) : (clearInterval(AAA_interval), elm_AAA.style.backgroundColor = "transparent", elm_AAA.textContent = "[A] Left A Team[No]", console.log(`[Kosto]Clearinterval Team A Clicker`), tc("Kosto", 'Clearinterval Team A Clicker', 3000))
             }
 
         }
@@ -194,7 +194,7 @@
     elm_jointeam.classList.add("toogle", "Joinrandomteam", "general");
     elm_jointeam.textContent = "[J] A&B[No]",
         elm_jointeam.addEventListener("click", () => {
-            (is_ab = !is_ab) ? (JoinTteam = setInterval(i, 1e-3), elm_jointeam.style.backgroundColor = "rgb(66 150 66/30%)", elm_jointeam.textContent = "[J] A&B[Running]", console.log(`[Kosto]Start Click DM&A Team&B Team`), tc('[Kosto]', 'Start Click DM&A Team&B Team Team', 3000)) : (clearInterval(JoinTteam), elm_jointeam.style.backgroundColor = "transparent", elm_jointeam.textContent = "[J] A&B[No]", `[Kosto]Stop Click DM&A Team&B Team`, tc('[Kosto]', 'Clearinterval DM&Team A&Team B Clicker', 3000))
+            (is_ab = !is_ab) ? (JoinTteam = setInterval(i, 10), elm_jointeam.style.backgroundColor = "rgb(66 150 66/30%)", elm_jointeam.textContent = "[J] A&B[Running]", console.log(`[Kosto]Start Click DM&A Team&B Team`), tc('[Kosto]', 'Start Click DM&A Team&B Team Team', 3000)) : (clearInterval(JoinTteam), elm_jointeam.style.backgroundColor = "transparent", elm_jointeam.textContent = "[J] A&B[No]", `[Kosto]Stop Click DM&A Team&B Team`, tc('[Kosto]', 'Clearinterval DM&Team A&Team B Clicker', 3000))
         });
 
 
@@ -205,7 +205,7 @@
             var inbattie = document.querySelector(".MenuComponentStyle-blockButtonsQECommunity.Common-flexCenterAlignCenter.Common-displayFlex.Common-alignCenter >.MenuComponentStyle-battleTitleCommunity");
 
             if (inbattie && elm_jointeam.style.display !== "none") {
-                (is_ab = !is_ab) ? (JoinTteam = setInterval(i, 1e-3), elm_jointeam.style.backgroundColor = "rgb(66 150 66/30%)", elm_jointeam.textContent = "[J] A&B[Running]", console.log(`[Kosto]Start Click DM&A Team&B Team`), tc('[Kosto]', 'Start Click DM&A Team&B Team Team', 3000)) : (clearInterval(JoinTteam), elm_jointeam.style.backgroundColor = "transparent", elm_jointeam.textContent = "[J] A&B[No]", `[Kosto]Stop Click DM&A Team&B Team`, tc('[Kosto]', 'Clearinterval DM&Team A&Team B Clicker', 3000))
+                (is_ab = !is_ab) ? (JoinTteam = setInterval(i, 10), elm_jointeam.style.backgroundColor = "rgb(66 150 66/30%)", elm_jointeam.textContent = "[J] A&B[Running]", console.log(`[Kosto]Start Click DM&A Team&B Team`), tc('[Kosto]', 'Start Click DM&A Team&B Team Team', 3000)) : (clearInterval(JoinTteam), elm_jointeam.style.backgroundColor = "transparent", elm_jointeam.textContent = "[J] A&B[No]", `[Kosto]Stop Click DM&A Team&B Team`, tc('[Kosto]', 'Clearinterval DM&Team A&Team B Clicker', 3000))
 
             }
 
