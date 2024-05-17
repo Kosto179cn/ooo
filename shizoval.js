@@ -1,5 +1,5 @@
 
-tc('[Kosto]','Shizoval is ready, please press the "\" key to display the menu')
+tc('[Kosto]','Shizoval is ready')
 	// ==UserScript==
 // @name             shizoval
 // @author           Alastor, tdsrse
